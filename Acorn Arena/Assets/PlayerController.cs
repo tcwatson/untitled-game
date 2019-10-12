@@ -6,12 +6,15 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
     private bool _facingRight;
-    private bool _isJumping;
+    private bool _isOnGround;
+    [SerializeField] float jumpForce = 6f;
+    [SerializeField] float moveSpeed = 2f;
 
     private void Awake()
     {
         _rigidbody = gameObject.GetComponent<Rigidbody2D>();
         _facingRight = true;
+        _isOnGround = true;
     }
     // Start is called before the first frame update
     void Start()
@@ -30,7 +33,7 @@ public class PlayerController : MonoBehaviour
         //Right
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
-            var velocity = new Vector2(1f, _rigidbody.velocity.y);
+            var velocity = new Vector2(moveSpeed, _rigidbody.velocity.y);
             _rigidbody.velocity = velocity;
             if (!_facingRight)
             {
@@ -41,7 +44,7 @@ public class PlayerController : MonoBehaviour
         //Left
         else if (Input.GetAxisRaw("Horizontal") < 0)
         {
-            var velocity = new Vector2(-1f, _rigidbody.velocity.y);
+            var velocity = new Vector2(-moveSpeed, _rigidbody.velocity.y);
             _rigidbody.velocity = velocity;
             if (_facingRight)
             {
@@ -49,11 +52,19 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetAxis("Jump") > 0)
+        if (Input.GetButtonDown("Jump") && _isOnGround)
         {
-            _rigidbody.AddForce(new Vector2(0, 0.5f), ForceMode2D.Impulse);
+            _isOnGround = false;
+            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
-        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Ground"))
+        {
+            _isOnGround = true;
+        }
     }
 
     private void FlipDirection()

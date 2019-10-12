@@ -215,6 +215,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor
       objectReference: {fileID: 0}
+    - target: {fileID: 544691115401188671, guid: 72a0c75c6da5be540954472a45a290ad,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 544691115401188643, guid: 72a0c75c6da5be540954472a45a290ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -338,6 +343,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9099944231933560772, guid: 44ddec1ea60ae5d4088d2780beeb9db5,
+        type: 3}
+      propertyPath: jumpForce
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9099944231933560772, guid: 44ddec1ea60ae5d4088d2780beeb9db5,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44ddec1ea60ae5d4088d2780beeb9db5, type: 3}
