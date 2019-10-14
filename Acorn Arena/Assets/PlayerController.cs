@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _rigidbody.freezeRotation = true;
     }
 
     // Update is called once per frame
