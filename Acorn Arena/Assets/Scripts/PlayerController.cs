@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpForce = 6f;
     [SerializeField] float moveSpeed = 2f;
 
-    private int numberOfAcorns = 0;
+    public int numberOfAcorns = 0;
 
     private void Awake()
     {
