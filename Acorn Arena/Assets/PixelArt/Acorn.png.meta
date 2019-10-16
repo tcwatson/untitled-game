@@ -26,6 +26,24 @@ TextureImporter:
   - first:
       213: -4437752609090018209
     second: Acorn_7
+  - first:
+      213: -5234960113350576096
+    second: Acorn_8
+  - first:
+      213: -6402406246036872110
+    second: Acorn_9
+  - first:
+      213: -457187655491945145
+    second: Acorn_10
+  - first:
+      213: -996023628935825838
+    second: Acorn_11
+  - first:
+      213: 2110795433386858043
+    second: Acorn_12
+  - first:
+      213: 2375368014504596200
+    second: Acorn_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -124,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acebf288e77f60c48a7bf8d4dfdb29aa
+      spriteID: e17167ca9f86d4749a199b3c7e8d7de7
       internalID: -6406794871735507730
       vertices: []
       indices: 
@@ -145,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0baae67f6aa0a7748bdc3262c0820952
+      spriteID: 64eb9c38d9e8ba04aad79cf3612e622a
       internalID: 8297601471488862521
       vertices: []
       indices: 
@@ -166,7 +184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99b09a2aa60d8d84da91c542c91c7426
+      spriteID: acfcb436f56c7514baa5ada31c54f6f4
       internalID: -3976121680048707079
       vertices: []
       indices: 
@@ -187,7 +205,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72895030cb06f7441a43a083d7cd0f7a
+      spriteID: cd1b8163aea234f468a768e471897194
       internalID: -238175081807205073
       vertices: []
       indices: 
@@ -208,7 +226,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98f71b9cb08012c438d97dcee9bdd208
+      spriteID: a892282a357bd514281959c8eb6fc8b5
       internalID: -1689924992810833268
       vertices: []
       indices: 
@@ -229,7 +247,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85582adc85d5c5947aa50c338e88aa45
+      spriteID: 302e904a01b25594f953ec24eb344f95
       internalID: -493625525908673263
       vertices: []
       indices: 
@@ -250,7 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ed9e33a944109a458dd14ce37aa9887
+      spriteID: b3179a5fbc6c4f640a7ebd3806296e35
       internalID: -7064275640851686840
       vertices: []
       indices: 
@@ -271,8 +289,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 443aab2b8263c7045947076b82642441
+      spriteID: d6e1ee8b4d5ed094dbaf803c1ed65cdb
       internalID: -4437752609090018209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acorn_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae102342eca8a84eb7008ac10217b09
+      internalID: -5234960113350576096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acorn_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5e44aeda7407f43b18321eb9706d45
+      internalID: -6402406246036872110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acorn_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f829333c98f9746a29c212842f2db4
+      internalID: -457187655491945145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acorn_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c71f32a6ab25f4499d4bc60ccc25371
+      internalID: -996023628935825838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acorn_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c34433bf481474499ba83668b72c600
+      internalID: 2110795433386858043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acorn_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd4a8d156800ba4fb655371c3fb75a4
+      internalID: 2375368014504596200
       vertices: []
       indices: 
       edges: []
