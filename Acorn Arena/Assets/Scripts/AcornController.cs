@@ -17,7 +17,6 @@ public class AcornController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log(col.gameObject.name);
         if (col.gameObject.tag.Equals("Player"))
         {
             Destroy(gameObject);

@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpForce = 6f;
     [SerializeField] float moveSpeed = 2f;
 
+    private int numberOfAcorns = 0;
+
     private void Awake()
     {
         _rigidbody = gameObject.GetComponent<Rigidbody2D>();
@@ -73,5 +75,13 @@ public class PlayerController : MonoBehaviour
         var existingScale = _rigidbody.transform.localScale;
         var newScale = new Vector3(-existingScale.x, existingScale.y, existingScale.z);
         _rigidbody.transform.localScale = newScale;
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag.Equals("Acorn"))
+        {
+            numberOfAcorns++;
+        }
     }
 }
