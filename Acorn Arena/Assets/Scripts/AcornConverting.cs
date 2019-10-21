@@ -23,6 +23,10 @@ public class AcornConverting : MonoBehaviour
         {
             StartCoroutine(StoppedMoving());
         }
+        if (collision.gameObject.tag.Equals("Player"))
+        {
+            Debug.Log("hit player");
+        }
     }
 
     IEnumerator StoppedMoving()
