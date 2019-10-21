@@ -5,6 +5,7 @@ using UnityEngine;
 public class AcornConverting : MonoBehaviour
 {
     public GameObject lootableAcorn;
+    private bool isLootable = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,7 @@ public class AcornConverting : MonoBehaviour
         {
             StartCoroutine(StoppedMoving());
         }
-        if (collision.gameObject.tag.Equals("Player"))
+        else if (collision.gameObject.tag.Equals("Player") && !isLootable)
         {
             Destroy(gameObject);
             collision.gameObject.GetComponent<PlayerController>().health--;
@@ -32,8 +33,17 @@ public class AcornConverting : MonoBehaviour
 
     IEnumerator StoppedMoving()
     {
-        yield return new WaitUntil(() => gameObject.GetComponent<Rigidbody2D>().velocity.x == 0);
-        Instantiate(lootableAcorn, gameObject.transform.position, gameObject.transform.rotation);
-        Destroy(gameObject);
+        isLootable = true;
+        yield return new WaitUntil(() => gameObject.GetComponent<Rigidbody2D>().velocity.x == 0 
+            && gameObject.GetComponent<Rigidbody2D>().velocity.y == 0);
+
+        gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        
+        gameObject.AddComponent<AcornController>();
+        gameObject.tag = "Acorn";
+        Destroy(gameObject.GetComponent<Rigidbody2D>());
+
+        //Instantiate(lootableAcorn, gameObject.transform.position, gameObject.transform.rotation);
+        //Destroy(gameObject);
     }
 }
