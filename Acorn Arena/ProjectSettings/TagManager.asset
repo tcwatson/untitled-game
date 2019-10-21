@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Acorn
+  - AcornProjectile
   layers:
   - Default
   - TransparentFX

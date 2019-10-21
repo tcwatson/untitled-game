@@ -74,6 +74,50 @@ Transform:
   m_Father: {fileID: 2698725041993193526}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1052675113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1052675114}
+  - component: {fileID: 1052675115}
+  m_Layer: 0
+  m_Name: PlayerHealth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1052675114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052675113}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2698725041993193526}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1052675115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052675113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f6d0ff2f633ed46afc20b601f8a38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreLabel: {fileID: 0}
 --- !u!1 &2698725041993193521
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +153,7 @@ Transform:
   m_Children:
   - {fileID: 399032221}
   - {fileID: 635114170}
+  - {fileID: 1052675114}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -244,6 +289,7 @@ MonoBehaviour:
   moveSpeed: 4
   acornProjectile: {fileID: 5609705676416251633, guid: d1402a1969ddb114db77652e430530ee,
     type: 3}
+  health: 3
   numberOfAcorns: 0
 --- !u!114 &338889404
 MonoBehaviour:
@@ -260,4 +306,4 @@ MonoBehaviour:
   acornEmitter: {fileID: 635114169}
   acornProjectile: {fileID: 1335221231509898821, guid: d1402a1969ddb114db77652e430530ee,
     type: 3}
-  acornSpeed: 0
+  acornSpeed: 600

@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpForce = 6f;
     [SerializeField] float moveSpeed = 2f;
     public Rigidbody2D acornProjectile;
+    public int health = 3;
 
     public int numberOfAcorns = 0;
 
@@ -84,5 +85,10 @@ public class PlayerController : MonoBehaviour
         {
             numberOfAcorns++;
         }
+
+        //else if (col.gameObject.tag.Equals("AcornProjectile"))
+        //{
+        //    health--;
+        //}
     }
 }

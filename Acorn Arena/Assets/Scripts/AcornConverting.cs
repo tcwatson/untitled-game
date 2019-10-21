@@ -25,7 +25,8 @@ public class AcornConverting : MonoBehaviour
         }
         if (collision.gameObject.tag.Equals("Player"))
         {
-            Debug.Log("hit player");
+            Destroy(gameObject);
+            collision.gameObject.GetComponent<PlayerController>().health--;
         }
     }
 
