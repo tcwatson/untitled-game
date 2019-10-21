@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private bool _isOnGround;
     [SerializeField] float jumpForce = 6f;
     [SerializeField] float moveSpeed = 2f;
+    public Rigidbody2D acornProjectile;
 
     public int numberOfAcorns = 0;
 
