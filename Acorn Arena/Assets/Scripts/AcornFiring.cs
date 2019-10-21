@@ -24,7 +24,6 @@ public class AcornFiring : MonoBehaviour
             //multiplying by the localScale.x makes it go in the left direction if the player is facing left;
             //scale.x is -1 when facing left.
             tempAcorn.GetComponent<Rigidbody2D>().AddForce(Vector2.right * acornSpeed * transform.localScale.x);
-
         }
     }
 }
