@@ -85,10 +85,5 @@ public class PlayerController : MonoBehaviour
         {
             numberOfAcorns++;
         }
-
-        //else if (col.gameObject.tag.Equals("AcornProjectile"))
-        //{
-        //    health--;
-        //}
     }
 }

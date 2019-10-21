@@ -32,7 +32,6 @@ public class AcornConverting : MonoBehaviour
 
     IEnumerator StoppedMoving()
     {
-        Debug.Log("waiting?");
         yield return new WaitUntil(() => gameObject.GetComponent<Rigidbody2D>().velocity.x == 0);
         Instantiate(lootableAcorn, gameObject.transform.position, gameObject.transform.rotation);
         Destroy(gameObject);
