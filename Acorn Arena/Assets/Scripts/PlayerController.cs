@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         //Right
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
-            var velocity = new Vector2(moveSpeed, _rigidbody.velocity.y);
+            var velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), _rigidbody.velocity.y);
             _rigidbody.velocity = velocity;
             if (!_facingRight)
             {
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
         //Left
         else if (Input.GetAxisRaw("Horizontal") < 0)
         {
-            var velocity = new Vector2(-moveSpeed, _rigidbody.velocity.y);
+            var velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), _rigidbody.velocity.y);
             _rigidbody.velocity = velocity;
             if (_facingRight)
             {

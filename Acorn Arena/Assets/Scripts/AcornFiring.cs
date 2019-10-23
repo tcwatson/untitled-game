@@ -17,8 +17,8 @@ public class AcornFiring : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetButtonDown("Fire1") && gameObject.GetComponent<PlayerController>().numberOfAcorns > 0)
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && gameObject.GetComponent<PlayerController>().numberOfAcorns > 0)
+            //if (Input.GetButtonDown("Fire1"))
         {
             GameObject tempAcorn = Instantiate(acornProjectile, acornEmitter.transform.position, acornEmitter.transform.rotation);
 
